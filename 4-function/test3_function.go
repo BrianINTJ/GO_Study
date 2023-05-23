@@ -39,7 +39,7 @@ func foo3(a string, b int) (r1 int, r2 int){
 	return
 }
 
-func foo4(a string, b int) (r1 , r2 int){
+func foo4(a string, b int) (r1, r2 int) {
 	fmt.Println("---- foo4 -----")
 	fmt.Println("a= ", a)
 	fmt.Println("b= ", b)
@@ -58,10 +58,10 @@ func main() {
 
 	ret1, ret2 := foo2("haha", 999)
 	fmt.Println("ret1 = ", ret1, "ret2 =", ret2)
-	
-	ret1, ret2 = foo3("hsdfjasdlkf", 23) 
+
+	ret1, ret2 = foo3("hsdfjasdlkf", 23)
 	fmt.Println("ret1 = ", ret1, "ret2 =", ret2)
-	
-	ret1, ret2 = foo4("foo4", 44) 
+
+	ret1, ret2 = foo4("foo4", 55)
 	fmt.Println("ret1 = ", ret1, "ret2 =", ret2)
 }
